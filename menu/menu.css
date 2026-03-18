@@ -53,13 +53,12 @@ a {
 }
 
 
-/* ===== КОНТЕЙНЕР ===== */
 .container {
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* ===== НАВИГАЦИЯ ===== */
+
 .navbar {
     background-color: #DCFB73;
     box-shadow: 0 11px 32px rgba(69, 72, 109, 0.25);
@@ -146,10 +145,6 @@ a {
     border-radius: 25px;
 }
 
-
-
-
-/* МЕНЮ */
 .container-menu {
     max-width: 978px;
     margin: 40px auto;
@@ -322,7 +317,7 @@ a {
 }
 
 
-/* ПОДВАЛ */
+
 .footer-container {
     display: flex;
     align-items: center;
@@ -449,7 +444,7 @@ a {
     height: 30px;
 }
 
-/* Мобильное меню */
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -520,7 +515,7 @@ a {
     margin: 15px 0;
 }
 
-/* Оверлей */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -537,8 +532,6 @@ a {
 }
 
 
-/* АДАПТИВ */
-/* Мобильные */
 @media (max-width: 480px) {
 
 
@@ -692,7 +685,6 @@ a {
     }
 }
 
-/* Планшеты */
 @media (min-width: 481px) and (max-width: 900px) {
     .nav-container {
         justify-content: space-between;
@@ -747,7 +739,6 @@ a {
     }
 }
 
-/* Узкие десктопы */
 @media (min-width: 901px) and (max-width: 1200px) {
     .container-menu {
         max-width: 960px;
@@ -813,37 +804,30 @@ a {
 
 @media screen and (max-width: 768px) {
 
-    /* Скрываем десктопное меню */
     .nav-menu {
         display: none;
     }
 
-    /* Показываем бургер-иконку */
     .burger-menu {
         display: block;
         margin-left: auto;
-        /* Прижимаем бургер к правому краю */
     }
 
-    /* ПОЛНОСТЬЮ СКРЫВАЕМ ВСЕ ИКОНКИ В ШАПКЕ на мобильных */
     .user-actions {
         display: none !important;
     }
 
-    /* Убираем лишние отступы */
     .nav-container {
         padding: 10px 15px;
         justify-content: space-between;
-        /* Распределяем пространство */
     }
 
-    /* Логотип остается слева */
     .logo {
         margin-right: auto;
     }
 }
 
-/* Дополнительные стили для мобильной версии меню */
+
 @media screen and (max-width: 768px) {
     .filter-menu {
         flex-direction: column;
@@ -853,7 +837,6 @@ a {
 
     .day-filter,
     .portions-filter {
-        width: 100%;
         justify-content: space-between;
     }
 
@@ -885,5 +868,10 @@ a {
     .add_btn {
         width: 90%;
         margin: 20px auto;
+    }
+
+    .footer-container {
+        padding: 0 30px;
+        gap: 40px;
     }
 }

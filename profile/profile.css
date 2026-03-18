@@ -1,4 +1,3 @@
-/* ===== ОБНУЛЕНИЕ И БАЗОВЫЕ СТИЛИ ===== */
 * {
     margin: 0;
 }
@@ -54,13 +53,11 @@ a {
 }
 
 
-/* ===== КОНТЕЙНЕР ===== */
 .container {
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* ===== НАВИГАЦИЯ ===== */
 .navbar {
     background-color: #DCFB73;
     box-shadow: 0 11px 32px rgba(69, 72, 109, 0.25);
@@ -148,9 +145,6 @@ a {
 }
 
 
-
-
-/* ===== ПРОФИЛЬ ===== */
 .profile-container {
     display: flex;
     align-items: center;
@@ -215,7 +209,7 @@ a {
 }
 
 
-/* ПОДВАЛ */
+
 .footer-container {
     display: flex;
     align-items: center;
@@ -253,8 +247,6 @@ a {
 }
 
 
-/* АДАПТИВ */
-/* Мобильные */
 @media (max-width: 480px) {
     .container {
         padding: 0 16px;
@@ -347,13 +339,12 @@ a {
     .social_media .icon {
         width: 36px;
     }
-    
+
     .address {
         font-size: 16px;
     }
 }
 
-/* Планшеты */
 @media (min-width: 481px) and (max-width: 900px) {
     .nav-container {
         justify-content: space-between;
@@ -364,7 +355,7 @@ a {
     .nav-menu {
         gap: 12px;
     }
-    
+
     .nav-link {
         font-size: 14px;
         padding: 8px 12px;

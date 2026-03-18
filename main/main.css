@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
 }
@@ -357,19 +356,14 @@ a {
     transition: max-height 0.5s ease, opacity 0.3s ease;
     opacity: 0;
     margin: 0;
-    /* Убираем отступы когда текст скрыт */
     padding: 0;
-    /* Убираем паддинги когда текст скрыт */
 }
 
 .question-block.active .block-text {
     max-height: 500px;
-    /* Достаточно большое значение для вмещения текста */
     opacity: 1;
     margin-top: 20px;
-    /* Возвращаем отступ когда текст виден */
     padding-bottom: 5px;
-    /* Небольшой отступ снизу */
 }
 
 
@@ -420,7 +414,7 @@ a {
     height: 30px;
 }
 
-/* Мобильное меню */
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -491,7 +485,7 @@ a {
     margin: 15px 0;
 }
 
-/* Оверлей */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -508,29 +502,27 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    /* Скрываем десктопное меню */
     .nav-menu {
         display: none;
     }
-    
-    /* Показываем бургер-иконку */
+
+
     .burger-menu {
         display: block;
-        margin-left: auto; /* Прижимаем бургер к правому краю */
+        margin-left: auto;
     }
-    
-    /* ПОЛНОСТЬЮ СКРЫВАЕМ ВСЕ ИКОНКИ В ШАПКЕ на мобильных */
+
     .user-actions {
         display: none !important;
     }
-    
-    /* Убираем лишние отступы */
+
+
     .nav-container {
         padding: 10px 15px;
-        justify-content: space-between; /* Распределяем пространство */
+        justify-content: space-between;
     }
-    
-    /* Логотип остается слева */
+
+
     .logo {
         margin-right: auto;
     }
@@ -541,17 +533,17 @@ a {
         display: block;
         margin-left: auto;
     }
-    
+
     .user-actions {
         display: none !important;
     }
-    
+
     .nav-container {
         padding: 8px 12px;
     }
 }
 
-/* Планшеты */
+
 @media (min-width: 481px) and (max-width: 1024px) {
     .nav-container {
         justify-content: space-between;
@@ -624,21 +616,5 @@ a {
     .footer-container {
         gap: 80px;
         padding: 50px 30px;
-    }
-}
-
-/* Очень широкие экраны */
-@media (min-width: 1400px) {
-    .main-content {
-        max-width: 1280px;
-    }
-
-    .reasons,
-    .questions {
-        max-width: 1200px;
-    }
-
-    .top_card-img {
-        width: 760px; /* или max-width: 55vw; */
     }
 }

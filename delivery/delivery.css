@@ -293,7 +293,6 @@ a {
     height: 30px;
 }
 
-/* Мобильное меню */
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -378,8 +377,7 @@ a {
 .overlay.active {
     display: block;
 }
-/* АДАПТИВ */
-/* Мобильные */
+
 @media (max-width: 480px) {
     .container {
         padding: 0 16px;
@@ -485,7 +483,7 @@ a {
     }
 }
 
-/* Планшеты */
+
 @media (min-width: 481px) and (max-width: 900px) {
     .nav-container {
         justify-content: space-between;
@@ -530,21 +528,21 @@ a {
     .nav-menu {
         display: none;
     }
-    
+
     .burger-menu {
         display: block;
         margin-left: auto;
     }
-    
+
     .user-actions {
         display: none !important;
     }
-    
+
     .nav-container {
         padding: 10px 15px;
         justify-content: space-between;
     }
-    
+
     .logo {
         margin-right: auto;
     }
