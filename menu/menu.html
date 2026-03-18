@@ -42,9 +42,35 @@
                     <a href="../profile/profile.html" class="user-icon">
                         <img src="../h-f-img/profile.svg" alt="Профиль">
                     </a>
-                    <div id="internal"><a href="../registration/register.html"
-                            class="jost-extrabold navbar-user">Регистрация</a></div>
+                    <div id="internal">
+                        <a href="../registration/register.html" class="jost-extrabold navbar-user">Регистрация</a>
+                    </div>
                 </div>
+
+                <div class="burger-menu">
+                    <img src="../h-f-img/menu.svg" alt="Меню" class="burger-icon">
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <div class="close-menu">
+                            <span>&times;</span>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav-menu">
+                        <li><a href="../delivery/delivery.html" class="mobile-nav-link jost-medium">О доставке</a></li>
+                        <li><a href="../menu/menu.html" class="mobile-nav-link jost-medium">Меню на сегодня</a></li>
+                        <li><a href="../calculator/calculator_ccpf.html" class="mobile-nav-link jost-medium">Расчет
+                                калорий</a></li>
+                        <li class="mobile-divider"></li>
+                        <li><a href="../like/like_recipes.html" class="mobile-nav-link jost-medium">Избранное</a></li>
+                        <li><a href="../cart/cart.html" class="mobile-nav-link jost-medium">Корзина</a></li>
+                        <li><a href="../profile/profile.html" class="mobile-nav-link jost-medium">Профиль</a></li>
+                        <li><a href="../registration/register.html" class="mobile-nav-link jost-medium">Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
             </div>
         </nav>
     </header>
@@ -56,50 +82,49 @@
 
             <div class="filter-menu">
                 <div class="day-filter">
-                    <p class="day-text">Сегодня, 13.02.26</p>
+                    <p class="day-text"></p>
                     <img class="arrow" src="./img/arrow.svg">
                 </div>
                 <div class="portions-filter">
-                    <p class="portions-text">3 приёма пищи</p>
+                    <p class="portions-text"></p>
                     <img class="arrow" src="./img/arrow.svg">
                 </div>
             </div>
 
-            <!-- ПУСТОЙ БЛОК - СЮДА ЗАГРУЗЯТСЯ БЛЮДА ИЗ JAVASCRIPT -->
             <div class="dishes_block"></div>
 
             <div class="stat_sum">
                 <div class="stats-box">
                     <div class="stats-item">
-                        <span class="stats-value jost-medium">3</span>
+                        <span class="stats-value jost-medium"></span>
                         <span class="stats-label jost-regular">блюда</span>
                     </div>
 
                     <div class="stats-divider"></div>
 
                     <div class="stats-item">
-                        <span class="stats-value jost-medium">1134</span>
+                        <span class="stats-value jost-medium"></span>
                         <span class="stats-label jost-regular">ккал</span>
                     </div>
 
                     <div class="stats-divider"></div>
 
                     <div class="stats-item">
-                        <span class="stats-value jost-medium">82</span>
+                        <span class="stats-value jost-medium"></span>
                         <span class="stats-label jost-regular">белки</span>
                     </div>
 
                     <div class="stats-divider"></div>
 
                     <div class="stats-item">
-                        <span class="stats-value jost-medium">26</span>
+                        <span class="stats-value jost-medium"></span>
                         <span class="stats-label jost-regular">жиры</span>
                     </div>
 
                     <div class="stats-divider"></div>
 
                     <div class="stats-item">
-                        <span class="stats-value jost-medium">139</span>
+                        <span class="stats-value jost-medium"></span>
                         <span class="stats-label jost-regular">углеводы</span>
                     </div>
                 </div>
@@ -136,8 +161,10 @@
             </div>
         </div>
     </footer>
+
     <script src="../JS/recepies.js"></script>
     <script src="../JS/menu.js"></script>
+    <script src="../JS/main.js"></script>
 </body>
 
 </html>

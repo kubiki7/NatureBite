@@ -1,4 +1,4 @@
-/* ===== ОБНУЛЕНИЕ И БАЗОВЫЕ СТИЛИ ===== */
+
 * {
     margin: 0;
 }
@@ -54,13 +54,11 @@ a {
 }
 
 
-/* ===== КОНТЕЙНЕР ===== */
 .container {
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* ===== НАВИГАЦИЯ ===== */
 .navbar {
     background-color: #DCFB73;
     box-shadow: 0 11px 32px rgba(69, 72, 109, 0.25);
@@ -149,7 +147,6 @@ a {
 
 
 
-/* ГЛАВНАЯ */
 .main-content {
     max-width: 1200px;
     margin: 70px auto;
@@ -376,8 +373,6 @@ a {
 }
 
 
-
-/* ПОДВАЛ */
 .footer-container {
     display: flex;
     align-items: center;
@@ -414,140 +409,145 @@ a {
     transform: scale(1.1);
 }
 
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
 
-/* АДАПТИВ */
-/* Маленькие мобильные */
-@media (max-width: 480px) {
-    .container {
-        padding: 0 16px;
-    }
+.burger-icon {
+    width: 30px;
+    height: 30px;
+}
 
-    .navbar {
-        padding: 12px 0;
-    }
+/* Мобильное меню */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+}
 
-    .logo-link {
-        font-size: 20px;
-    }
+.mobile-menu.active {
+    left: 0;
+}
 
+.mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.close-menu {
+    font-size: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    color: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-menu span {
+    display: block;
+    line-height: 1;
+}
+
+.mobile-nav-menu {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.mobile-nav-link {
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    transition: color 0.2s, padding-left 0.2s;
+}
+
+.mobile-nav-link:hover {
+    color: #5da130;
+    padding-left: 10px;
+}
+
+.mobile-divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 15px 0;
+}
+
+/* Оверлей */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    /* Скрываем десктопное меню */
     .nav-menu {
-        gap: 12px;
+        display: none;
     }
-
-    .nav-link {
-        font-size: 14px;
-        padding: 6px 10px;
+    
+    /* Показываем бургер-иконку */
+    .burger-menu {
+        display: block;
+        margin-left: auto; /* Прижимаем бургер к правому краю */
     }
-
-    .user-icon img {
-        width: 22px;
-        height: 22px;
+    
+    /* ПОЛНОСТЬЮ СКРЫВАЕМ ВСЕ ИКОНКИ В ШАПКЕ на мобильных */
+    .user-actions {
+        display: none !important;
     }
-
-    .navbar-user {
-        font-size: 16px;
-        padding: 2px 8px;
+    
+    /* Убираем лишние отступы */
+    .nav-container {
+        padding: 10px 15px;
+        justify-content: space-between; /* Распределяем пространство */
     }
-
-    .main-content {
-        margin: 40px auto;
+    
+    /* Логотип остается слева */
+    .logo {
+        margin-right: auto;
     }
+}
 
-    .top_card {
-        flex-direction: column;
+@media screen and (max-width: 480px) {
+    .burger-menu {
+        display: block;
+        margin-left: auto;
     }
-
-    .col {
-        margin: 32px 24px;
-        gap: 24px;
+    
+    .user-actions {
+        display: none !important;
     }
-
-    .top_title {
-        font-size: 28px;
-        line-height: 1.2;
-    }
-
-    .top_desc {
-        font-size: 16px;
-    }
-
-    .menu-btn {
-        font-size: 16px;
-        padding: 14px 24px;
-    }
-
-    .top_card-img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .reasons {
-        margin: 40px auto;
-    }
-
-    .reasons_title {
-        font-size: 26px;
-    }
-
-    .reasons_cards {
-        gap: 24px;
-    }
-
-    .reason_card1,
-    .reason_card2,
-    .reason_card3 {
-        max-width: 100%;
-    }
-
-    .card_title {
-        font-size: 20px;
-        margin: 24px 16px 8px;
-    }
-
-    .card_list_item {
-        font-size: 17px;
-    }
-
-    .reason_card1 img {
-        width: 90%;
-        margin-top: -20px;
-    }
-
-    .reason_card2 img,
-    .reason_card3 img {
-        width: 220px;
-    }
-
-    .questions {
-        padding: 0 16px;
-    }
-
-    .question-title {
-        font-size: 26px;
-    }
-
-    .block-title {
-        font-size: 22px;
-    }
-
-    .block-text {
-        font-size: 17px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 40px;
-        padding: 40px 16px;
-        min-height: auto;
-    }
-
-    .tel_num {
-        font-size: 24px;
-    }
-
-    .social_media .icon {
-        width: 32px;
+    
+    .nav-container {
+        padding: 8px 12px;
     }
 }
 

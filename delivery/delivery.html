@@ -6,40 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NatureBite — Доставка</title>
 
-    <!-- Favicon -->
     <link rel="icon" href="../h-f-img/favicon.ico" type="image/x-icon">
-    <!-- Google Fonts - Jost -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="./delivery.css">
 
-    <!-- Подключение API Яндекс.Карт -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
     <header>
-        <!-- Навигационная панель -->
         <nav class="navbar">
             <div class="container nav-container">
-                <!-- Логотип -->
                 <div class="logo">
                     <img src="../h-f-img/favicon.ico" class="logo-img" alt="NatureBite">
                     <a href="../main/index.html" class="logo-link jost-black">NatureBite</a>
                 </div>
 
-                <!-- Навигационные ссылки -->
                 <ul class="nav-menu">
                     <li><a href="../delivery/delivery.html" class="nav-link jost-medium active">О доставке</a></li>
                     <li><a href="../menu/menu.html" class="nav-link jost-medium">Меню на сегодня</a></li>
                     <li><a href="../calculator/calculator_ccpf.html" class="nav-link jost-medium">Расчет калорий</a></li>
                 </ul>
 
-                <!-- Пользовательские действия -->
                 <div class="user-actions">
                     <a href="../like/like_recipes.html" class="user-icon">
                         <img src="../h-f-img/like.svg" alt="Избранное">
@@ -50,8 +42,33 @@
                     <a href="../profile/profile.html" class="user-icon">
                         <img src="../h-f-img/profile.svg" alt="Профиль">
                     </a>
-                    <div id="internal"><a href="../registration/register.html" class="jost-extrabold navbar-user">Регистрация</a></div>
+                    <div id="internal">
+                        <a href="../registration/register.html" class="jost-extrabold navbar-user">Регистрация</a>
+                    </div>
                 </div>
+
+                <div class="burger-menu">
+                    <img src="../h-f-img/menu.svg" alt="Меню" class="burger-icon">
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <div class="close-menu">
+                            <span>&times;</span>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav-menu">
+                        <li><a href="../delivery/delivery.html" class="mobile-nav-link jost-medium">О доставке</a></li>
+                        <li><a href="../menu/menu.html" class="mobile-nav-link jost-medium">Меню на сегодня</a></li>
+                        <li><a href="../calculator/calculator_ccpf.html" class="mobile-nav-link jost-medium">Расчет калорий</a></li>
+                        <li class="mobile-divider"></li>
+                        <li><a href="../like/like_recipes.html" class="mobile-nav-link jost-medium">Избранное</a></li>
+                        <li><a href="../cart/cart.html" class="mobile-nav-link jost-medium">Корзина</a></li>
+                        <li><a href="../profile/profile.html" class="mobile-nav-link jost-medium">Профиль</a></li>
+                        <li><a href="../registration/register.html" class="mobile-nav-link jost-medium">Регистрация</a></li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
             </div>
         </nav>
     </header>
@@ -104,7 +121,6 @@
                     <p class="desc jost-regular">В оранжевой зоне доплата составляет 250 ₽ за каждую доставку.</p>
                 </div>
 
-                <!-- Карта -->
                 <div id="js-delivery-map" class="js-delivery-map"></div>
 
             </div>
@@ -134,7 +150,7 @@
         </div>
     </footer>
 
-
+    <script src="../JS/main.js"></script>
     <script>
         ymaps.ready(init);
 
@@ -220,7 +236,6 @@
             });
         }
     </script>
-
 </body>
 
 </html>
